@@ -13,6 +13,7 @@ import {
 import { AstroFont } from "astro-font";
 import { ClientRouter } from "astro:transitions";
 import SearchModal from "./helpers/SearchModal";
+import Announcement from "./helpers/Announcement";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -189,6 +190,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     }
 
     <TwSizeIndicator />
+    <Announcement client:load />
     <Header />
     <SearchModal client:load />
     <main id="main-content">

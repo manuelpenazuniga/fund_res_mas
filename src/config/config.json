@@ -7,8 +7,8 @@
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "150",
-    "logo_height": "30",
+    "logo_width": "250",
+    "logo_height": "50",
     "logo_text": "Astroplate"
   },
 
@@ -21,6 +21,13 @@
     "summary_length": 200,
     "blog_folder": "blog"
   },
+
+  "announcement": {
+    "enable": true,
+    "content": "<span class='text-center block'>♥️ Loving Astroplate? <a class='underline' href='https://github.com/zeon-studio/astroplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>",
+    "expire_days": 7
+  },
+
 
   "params": {
     "contact_form_action": "#",

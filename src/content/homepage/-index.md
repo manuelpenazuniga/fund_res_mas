@@ -11,35 +11,37 @@ banner:
 
 # Features
 features:
-  - title: "What's Included in Astroplate"
-    image: "/images/service-1.png"
-    content: "Astroplate is a comprehensive starter template that includes everything you need to get started with your Astro project. What's Included in Astroplate"
+  - title: "Qué es la Fundación Rescate de Mascotas Chile?"
+    image: "/images/foto_actividad2.jpg"
+    content: "Somos una agrupación animalista **sin fines de lucro** dedicada a generar conciencia en la comunidad, promoviendo la tenencia responsable de mascotas mediante iniciativas enfocadas en la educación, la prevención y la protección de los animales."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Astro and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Astro"
-    image: "/images/service-2.png"
-    content: "Astro is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Tiene personalidad jurídica vigente"
+      - "Posee una Directiva inscrita y estatutos"
+      - "Cuenta con más de 50 voluntarios"
+      - "Promotora de la tenencia responsable"
+      - "Reconocida como entidad donataria conforme a la Ley de Donaciones"
+      
     button:
       enable: true
+      label: "Conoce más"
+      link: "#"
+
+  - title: "Nuestros objetivos"
+    image: "/images/foto_actividad1.jpg"
+    content: "Porque cada vida importa, trabajamos cada día por el bienestar de los animales, enfocados en rescatar, proteger y brindar nuevas oportunidades a perros y gatos en situación de abandono. Nuestras principales metas son:"
+    bulletpoints:
+      - "Proteger, rescatar y cuidar a perros y gatos abandonados o sin hogar"
+      - "Gestionar y coordinar hogares temporales para su acogida y recuperación"
+      - "Promover la tenencia responsable de animales, impulsando el cumplimiento y perfeccionamiento de la Ley de Protección Animal."
+      - "Fomentar campañas de esterilización para el control ético de la población animal"
+      - "Brindar rehabilitación física y psicológica, junto con un seguimiento permanente de las mascotas adoptadas"
+    button:
+      enable: false
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/astroplate"
 
   - title: "The Top Reasons to Choose Astro for Your Next Project"
-    image: "/images/service-3.png"
+    image: "/images/foto_rescate.jpg"
     content: "With Astro, you can build modern and content-focused websites without sacrificing performance or ease of use."
     bulletpoints:
       - "Instantly load static sites for better user experience and SEO."
@@ -47,7 +49,7 @@ features:
       - "Use any front-end library or framework, or build custom components, for any project size."
       - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
     button:
-      enable: false
+      enable: true
       label: ""
       link: ""
 ---

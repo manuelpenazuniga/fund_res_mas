@@ -1,11 +1,11 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "Nosotros",
       "url": "/about"
     },
     {
@@ -18,7 +18,7 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Contact",
+          "name": "Contacto",
           "url": "/contact"
         },
         {
@@ -50,7 +50,7 @@
       "url": "/elements"
     },
     {
-      "name": "Privacy Policy",
+      "name": "Política de Privacidad",
       "url": "/privacy-policy"
     }
   ]
