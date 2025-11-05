@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Astroplate",
+    "title": "Fundación Rescate de Mascotas Chile",
     "base_url": "https://astroplate.netlify.app",
     "base_path": "/",
     "trailing_slash": false,
@@ -9,7 +9,7 @@
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "250",
     "logo_height": "50",
-    "logo_text": "Astroplate"
+    "logo_text": "Rescate de Mascotas Chile"
   },
 
   "settings": {
@@ -24,19 +24,19 @@
 
   "announcement": {
     "enable": true,
-    "content": "<span class='text-center block'>♥️ Loving Astroplate? <a class='underline' href='https://github.com/zeon-studio/astroplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>",
-    "expire_days": 7
+    "content": "<span class='text-center block'>♥️ **Aqui pueden ponerse enlaces al proyecto de coronas** <a class='underline' href='https://github.com/zeon-studio/astroplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>",
+    "expire_days": 360
   },
 
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "Implementado por [MPZ](https://manuelpenazuniga.github.io/) \uD83E\uDD99"
   },
 
   "navigation_button": {
     "enable": true,
-    "label": "Get Started",
+    "label": "Enlace Proyecto Coronas",
     "link": "https://github.com/zeon-studio/astroplate"
   },
 
