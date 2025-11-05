@@ -24,7 +24,7 @@ features:
     button:
       enable: true
       label: "Conoce más"
-      link: "#"
+      link: "/about"
 
   - title: "Nuestros objetivos"
     image: "/images/foto_actividad1.jpg"
@@ -36,20 +36,22 @@ features:
       - "Fomentar campañas de esterilización para el control ético de la población animal"
       - "Brindar rehabilitación física y psicológica, junto con un seguimiento permanente de las mascotas adoptadas"
     button:
-      enable: false
-      label: "Get Started Now"
+      enable: true
+      label: "Involucrate"
       link: "https://github.com/zeon-studio/astroplate"
 
-  - title: "The Top Reasons to Choose Astro for Your Next Project"
+  - title: "Las Actividades que realizamos"
     image: "/images/foto_rescate.jpg"
-    content: "With Astro, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "Periódicamente organizamos instancias donde la fundación puede  presentar a los rescatines (mascotas que tiene la fundación que buscan un hogar definitivo), ademas de diversas actividades como:"
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Astro a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Jornada de adopción de mascotas rescatadas"
+      - "Operativos de Vacunas y Microchips"
+      - "Charlas de tenencia responsable en JJVV, colegios y organizaciones"
+      - "Recaudación de Fondos para afectados por los incendios en la V región"
+      - "Jornada de limpieza y relleno de potes para perritos en el centro de Talca"
+      - "Organización y realización de Corrida Familiar con Mascotas"
     button:
       enable: true
-      label: ""
-      link: ""
+      label: "Actividades en detalle"
+      link: "/blog"
 ---
