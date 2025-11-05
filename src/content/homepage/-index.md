@@ -37,7 +37,7 @@ features:
       - "Brindar rehabilitación física y psicológica, junto con un seguimiento permanente de las mascotas adoptadas"
     button:
       enable: true
-      label: "Involucrate"
+      label: "Participa"
       link: "https://github.com/zeon-studio/astroplate"
 
   - title: "Las Actividades que realizamos"

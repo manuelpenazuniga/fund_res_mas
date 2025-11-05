@@ -9,39 +9,43 @@
       "url": "/about"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Que hacemos",
+      "url": "/activities"
     },
+
+
     {
-      "name": "Pages",
+      "name": "Participa",
       "url": "",
       "hasChildren": true,
       "children": [
+
+
         {
-          "name": "Contacto",
-          "url": "/contact"
-        },
-        {
-          "name": "Blog",
-          "url": "/blog"
-        },
-        {
-          "name": "Autores",
+          "name": "Regala un rescate",
           "url": "/authors"
         },
         {
-          "name": "Categorias",
+          "name": "Hazte soci@",
           "url": "/categories"
         },
         {
-          "name": "Tags",
+          "name": "Participa como voluntari@",
           "url": "/tags"
         },
         {
-          "name": "404 Page",
+          "name": "Suma a tu empresa",
           "url": "/404"
         }
       ]
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Contacto",
+      "url": "/contact"
     }
   ],
   "footer": [
@@ -52,6 +56,10 @@
     {
       "name": "Política de Privacidad",
       "url": "/privacy-policy"
+    },
+    {
+      "name": "Contacto",
+      "url": "/contact"
     }
   ]
 }

@@ -7,7 +7,7 @@
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "250",
+    "logo_width": "200",
     "logo_height": "50",
     "logo_text": "Rescate de Mascotas Chile"
   },
@@ -30,7 +30,7 @@
 
 
   "params": {
-    "contact_form_action": "#",
+    "contact_form_action": "82e5933d-b67e-4c52-9f55-459b1cb86212",
     "copyright": "Implementado por MPZ \uD83E\uDD99"
   },
 
