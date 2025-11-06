@@ -15,6 +15,8 @@ Nuestra misión es generar conciencia sobre la tenencia responsable de mascotas,
 
 Queremos que la comunidad sepa que nuestra labor es totalmente voluntaria y que los hogares temporales que ofrecemos son gratuitos. Realizamos este trabajo con profundo cariño hacia nuestros hermanos menores, motivados únicamente por la satisfacción de contribuir, con conciencia y compromiso, al bienestar de quienes no tienen voz pero entregan amor incondicional y compañía genuina.
 
+
+![image](/images/foto_actividad8.jpg)
 ---
 
 #### Nuestra Vision

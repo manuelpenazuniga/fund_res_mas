@@ -23,19 +23,19 @@
 
         {
           "name": "Regala un rescate",
-          "url": "/authors"
+          "url": "/regalaunrescate"
         },
         {
           "name": "Hazte soci@",
-          "url": "/categories"
+          "url": "/haztesocio"
         },
         {
           "name": "Participa como voluntari@",
-          "url": "/tags"
+          "url": "/voluntario"
         },
         {
           "name": "Suma a tu empresa",
-          "url": "/404"
+          "url": "/sumaatuempresa"
         }
       ]
     },

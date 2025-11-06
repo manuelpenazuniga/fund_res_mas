@@ -24,7 +24,7 @@
 
   "announcement": {
     "enable": true,
-    "content": "<span class='text-center block'>♥️ **Aqui pueden ponerse enlaces al proyecto de coronas** <a class='underline' href='https://github.com/zeon-studio/astroplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>",
+    "content": "<span class='text-center block'>♥️ **Aqui pueden ponerse enlaces al proyecto de coronas** <a class='underline' href='https://youtube.com' target='_blank' rel='noopener'>Link ⭐️</a></span>",
     "expire_days": 360
   },
 
