@@ -1,0 +1,111 @@
+{
+  "$ref": "#/definitions/homepage",
+  "definitions": {
+    "homepage": {
+      "type": "object",
+      "properties": {
+        "banner": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "button": {
+              "type": "object",
+              "properties": {
+                "enable": {
+                  "type": "boolean"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "enable",
+                "label",
+                "link"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "title",
+            "content",
+            "image",
+            "button"
+          ],
+          "additionalProperties": false
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "image": {
+                "type": "string"
+              },
+              "content": {
+                "type": "string"
+              },
+              "bulletpoints": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "button": {
+                "type": "object",
+                "properties": {
+                  "enable": {
+                    "type": "boolean"
+                  },
+                  "label": {
+                    "type": "string"
+                  },
+                  "link": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "enable",
+                  "label",
+                  "link"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "title",
+              "image",
+              "content",
+              "bulletpoints",
+              "button"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "banner",
+        "features"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
