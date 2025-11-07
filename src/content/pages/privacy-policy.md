@@ -1,30 +1,31 @@
 ---
-title: "Privacy"
+title: "Privacidad"
 meta_title: ""
 description: "this is meta description"
 draft: false
 ---
 
-#### Responsibility of Contributors
+#### Terminos y Condiciones de Privacidad
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+Conforme a lo dispuesto en el artículo 19 Nº 4 de la Constitución Política de la República y a las normas pertinentes de la Ley Nº 19.628 sobre Protección de la Vida Privada, la recopilación y el tratamiento de datos personales que se realiza con ocasión del uso del sitio web [https://www.rescatedemascotas.org](https://www.rescatedemascotas.org/)  (en adelante, “Sitio”) de la Fundación Rescate de Mascotas Chile, se rige por las siguientes reglas:
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+La Fundación Rescate de Mascotas Chile recopila y trata los datos personales de los Usuarios que ingresan y usan el Sitio, a través de los formularios de registro y de contacto, formularios de socios, cuyo tratamiento ha sido autorizado expresamente por el titular.
 
-#### Gathering of Personal Information
+Para estos efectos, los datos personales que se recopilan a través del Sitio son: el nombre, RUT, domicilio, teléfono, correo electrónico, datos de uso y visita del sitio web, historial de navegación.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+La Fundación es responsable del tratamiento de los datos personales que se realiza con ocasión del uso del Sitio, por lo que se compromete a implementar las medidas administrativas, técnicas, físicas y de gestión necesarias para la seguridad y confidencialidad de la información.
 
-#### Protection of Personal- Information
+Los datos personales de los Usuarios serán utilizados exclusivamente para el cumplimiento de los fines indicados a continuación y siempre dentro del objeto fijado por los estatutos de la fundación:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+- Procesamiento de los pagos realizados a través del Sitio.
+- Procesamiento del registro de los Usuarios, creación y gestión de las cuentas de los Usuarios y apoyo de los Usuarios para el ingreso a las cuentas.
+- Contacto con los Usuarios para proporcionar información y noticias acerca de las actividades de la Fundación, y resolver solicitudes y consultas;
+- Procesamiento de donaciones a la Fundación a través de un pago automático;
+- Contacto a los Usuarios para la realización de un voluntariado con la Fundación y;
+- Contacto por medio de cartas al domicilio proporcionado para agradecer a los Usuarios donantes de la Fundación.
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+Los datos personales de los Usuarios podrán ser comunicados a terceros tales como los proveedores de servicios de pago, tecnología de la información, despachos, comunicaciones, entre otros; que son necesarios para el funcionamiento del Sitio y para poder cumplir con las finalidades descritas en el párrafo anterior. Dichos terceros se obligan a tratar los datos exclusivamente para las finalidades indicadas, con estricta sujeción a las instrucciones que le entregue la Fundación, y a conservar los datos en forma confidencial y segura.
 
-#### Privacy Policy Changes
+Respecto de la recolección y tratamiento de datos realizada mediante mecanismos automatizados con el objeto de generar registros de actividad de los visitantes y registros de audiencia, la Fundación Rescate de Mascotas Chile sólo podrá utilizar dicha información para la elaboración de informes que cumplan con los objetivos establecidos en los estatutos de la Fundación. En ningún caso podrá realizar operaciones que impliquen asociar dicha información a algún Usuario identificado o identificable.
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+El Usuario podrá, en todo momento, ejercer los derechos de acceso, rectificación, eliminación y bloqueo otorgados por la Ley N.º 19.628, enviando un correo a la dirección contacto@rescatedemascotas.org indicando claramente su identidad, el derecho que se ejerce y los demás datos que sean necesarios para procesar correctamente su solicitud.
