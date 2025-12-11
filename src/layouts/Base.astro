@@ -14,6 +14,8 @@ import { AstroFont } from "astro-font";
 import { ClientRouter } from "astro:transitions";
 import SearchModal from "./helpers/SearchModal";
 import Announcement from "./helpers/Announcement";
+import Analytics from '@vercel/analytics/astro';
+
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -180,6 +182,7 @@ const { title, meta_title, description, image, noindex, canonical } =
       }`}
     />
     <meta name="twitter:card" content="summary_large_image" />
+    <Analytics />
   </head>
   <body>
     {/* google tag manager noscript */}
