@@ -4,7 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an Astro-based blog/content website built with TailwindCSS and TypeScript. It's based on the Astroplate template and includes features like multi-author support, dark mode, search functionality, tags/categories, and Disqus comments.
+This is an Astro-based website for **Fundación Rescate de Mascotas Chile**, a nonprofit animal rescue organization based in Talca, Chile. Built with Astro, TailwindCSS & TypeScript, based on the Astroplate template. The site includes multi-author blog support, dark mode, search functionality, tags/categories, and Disqus comments.
+
+The project has two main areas:
+1. **Main site** (static): Blog, about, contact, activities, volunteer pages — content-driven via Markdown/MDX.
+2. **Donation app** (SSR/hybrid): Interactive donation wizard with payment processing, tracking, and certificates. See `DONACIONES.md` for the full technical spec.
 
 ## Development Commands
 
@@ -37,6 +41,22 @@ yarn remove-darkmode
 
 ## Architecture
 
+### Output Mode: Hybrid (Static + SSR)
+
+The project uses Astro's `hybrid` output mode:
+- **Static pages** (default, `prerender = true`): All content pages (blog, about, contact, activities, etc.) are pre-rendered at build time. No changes from original behavior.
+- **Dynamic pages** (`prerender = false`): Donation wizard, payment API routes, tracking pages. These run as Vercel serverless functions.
+
+```javascript
+// astro.config.mjs
+import vercel from '@astrojs/vercel';
+export default defineConfig({
+  output: 'hybrid',
+  adapter: vercel(),
+  // ...
+});
+```
+
 ### Path Aliases (tsconfig.json)
 - `@/components/*` → `src/layouts/components/*`
 - `@/shortcodes/*` → `src/layouts/shortcodes/*`
@@ -48,7 +68,7 @@ yarn remove-darkmode
 Content is organized in `src/content/` with the following collections:
 - `blog/` - Blog posts
 - `authors/` - Author profiles
-- `pages/` - Static pages (e.g., privacy-policy)
+- `pages/` - Static pages (privacy-policy, activities, haztesocio, regalaunrescate, sumaatuempresa, voluntario)
 - `about/` - About page content
 - `homepage/` - Homepage content
 - `contact/` - Contact page content
@@ -64,6 +84,17 @@ Dynamic routes in `src/pages/`:
 - `tags/[tag].astro` - Tag filter pages
 - `categories/[category].astro` - Category filter pages
 - `authors/[single].astro` - Author profile pages
+
+**Donation routes** (SSR, `prerender = false`):
+- `donar.astro` - Donation wizard (React island)
+- `seguimiento/[codigo].astro` - Public tracking page
+- `donacion/confirmacion.astro` - Post-payment confirmation
+- `api/crear-pago.ts` - Creates Flow payment order
+- `api/flow-webhook.ts` - Receives Flow payment confirmation
+- `api/flow-return.ts` - Post-payment return handler
+- `api/productos.ts` - Lists donation products
+- `api/donacion/[codigo].ts` - Donation tracking data
+- `api/keep-alive.ts` - Cron job to prevent Supabase free tier pause
 
 ### Configuration System
 Site configuration managed through JSON files in `src/config/`:
@@ -96,16 +127,73 @@ Located in `src/lib/utils/`:
 - `readingTime.ts` - Reading time calculation
 - `bgImageMod.ts` - Background image processing
 
+**Donation utilities** in `src/lib/`:
+- `supabase.ts` - Supabase client configuration
+- `flow.ts` - Flow.cl payment API utilities
+- `certificate.ts` - PDF certificate generation (jsPDF)
+- `email.ts` - Transactional email sending (Resend)
+
 ### Component Structure
 - `src/layouts/components/` - Reusable UI components
 - `src/layouts/shortcodes/` - MDX shortcodes (Button, Accordion, Notice, Video, Youtube, Tabs)
 - `src/layouts/helpers/` - React helper components (SearchModal, Disqus, DynamicIcon, SearchResult)
 - `src/layouts/partials/` - Page partials
 
+**Donation components** in `src/layouts/components/donation/`:
+- `DonationApp.tsx` - Main wizard component (mounted in donar.astro)
+- `StepSelector.tsx` - Step 1: Choose what to donate
+- `StepDetails.tsx` - Step 2: Quantity + recipient details
+- `StepMessage.tsx` - Step 3: Personalize certificate message
+- `StepPayment.tsx` - Step 4: Donor info + pay
+- `StepConfirmation.tsx` - Step 5: Certificate + tracking code
+- `ProductCard.tsx` - Donation product card
+- `OrderSummary.tsx` - Sidebar order summary
+- `TrackingTimeline.tsx` - Rescue animal update timeline
+
 Shortcodes are auto-imported in `astro.config.mjs` for use in MDX files without explicit imports.
 
 ### Styling
 TailwindCSS v4+ integrated via Vite plugin. Custom Tailwind plugins in `src/tailwind-plugin/`.
+
+## External Services
+
+### Supabase (Database + Storage)
+- **Purpose**: PostgreSQL database for donations, products, rescue animals, tracking updates. Storage for animal photos.
+- **Plan**: Free tier (500MB DB, 1GB storage, 50K MAUs)
+- **Tables**: `productos`, `donaciones`, `rescatines`, `actualizaciones`
+- **Access**: Server-side via service role key (API routes), client-side via anon key (read-only public data)
+- **Dashboard**: Used by foundation staff to manage rescue animals and upload updates
+
+### Flow.cl (Payment Processing)
+- **Purpose**: Payment gateway for donations (credit card, debit, bank transfer, 30+ methods)
+- **Plan**: No fixed cost, commission only (~3.19% + IVA per transaction)
+- **Integration**: Server-side only (API routes). Never expose keys in frontend.
+- **Environments**: sandbox.flow.cl (development), flow.cl (production)
+- **Foundation data**: RUT 65.212.606-5, Cuenta Ahorro Banco Estado
+
+### Resend (Transactional Emails)
+- **Purpose**: Confirmation emails to donors, gift notification emails to recipients
+- **Plan**: Free tier (100 emails/day, 3000/month)
+
+## Environment Variables
+
+```env
+# Supabase
+PUBLIC_SUPABASE_URL=https://xxxxx.supabase.co
+PUBLIC_SUPABASE_ANON_KEY=eyJhbG...
+SUPABASE_SERVICE_ROLE_KEY=eyJhbG...       # Server-side only
+
+# Flow.cl
+FLOW_API_KEY=your-api-key                  # Server-side only
+FLOW_SECRET_KEY=your-secret-key            # Server-side only
+FLOW_API_URL=https://sandbox.flow.cl/api   # Change to https://www.flow.cl/api in production
+
+# Resend
+RESEND_API_KEY=re_xxxxxxxx                 # Server-side only
+
+# App
+PUBLIC_SITE_URL=https://fund-res-mas.vercel.app
+```
 
 ## Key Integration Points
 
@@ -131,6 +219,15 @@ Theme switching controlled by:
 - Separate logo files for light/dark modes
 - Can be removed entirely via `yarn remove-darkmode`
 
+### Donation System
+For the complete technical specification of the donation system, see **`DONACIONES.md`** in the project root. Key points:
+- React multi-step wizard mounted as Astro island (`client:load`)
+- Flow.cl for payment processing (server-side integration via API routes)
+- Supabase for data persistence and file storage
+- Resend for transactional emails
+- jsPDF for client-side certificate generation
+- Public tracking pages for donation traceability
+
 ## Important Notes
 
 - Always run `yarn generate-json` before testing search functionality locally
@@ -138,3 +235,8 @@ Theme switching controlled by:
 - The site base URL and path are configured in `config.json` and used in `astro.config.mjs`
 - Image optimization uses Sharp
 - Pagination limit set in `config.json` → `settings.pagination`
+- **Static pages** don't need any changes — they continue to work exactly as before
+- **API routes and dynamic pages** must include `export const prerender = false`
+- **Never expose Flow or Supabase service keys in client-side code** — only in API routes
+- Supabase free tier pauses after 7 days of inactivity — use a Vercel cron to ping it (see `vercel.json` and `/api/keep-alive.ts`)
+- Foundation is registered as tax-deductible entity under Ley N° 21.440 (RUT: 65.212.606-5)
